@@ -1,0 +1,90 @@
+@CHARSET "ISO-8859-1";
+#NavigationItem{
+	background-color: black;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	height: 40px;
+}
+.NameHolder{
+	background-color: grey;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	float: right;
+}
+.NameHolder:HOVER .dropDown{
+	display: block;
+	clear: left;
+}
+.dropDown{
+	display: none;
+	text-align: left;
+	z-index: 1;
+	position: absolute;
+}
+.dropDown a{
+	color: black;
+	padding: 10px 15px;
+	text-decoration: none;
+	display: block;
+	margin-top: 40px;
+	background-color: white;
+}
+.userNameTag{
+	color: black;
+	background-color: transparent;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-left: 20px;
+	margin-right: 20px;
+	float: left;
+	padding-top: 17px;
+	padding-bottom: 3px;	
+	height: 20px;
+}
+#myExample_button{
+	color:white;
+	background-color: black;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	float: left;
+}
+.leftButtonHolder{
+	height: 20px;
+	margin-top: 17px;
+	background-color: black;
+	float: left; 
+	display: inline-block ;
+}
+.leftButtonHolder a{
+	margin-left: 20px;
+	color: white;
+	background-color: black;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	display: inline-block ;
+	text-decoration: none;
+	padding: 0px;
+}
+#buttonHolder{
+		background-color: black;
+		margin-top: 15px;
+		margin-bottom: 0px;
+		margin-left: 0px;
+		margin-right: 0px;
+		float: right;
+		height: 20px;
+}
+/*-----------------navigation pannel design ends here------------------------------*/
+body{
+		margin-left: 0px;
+		margin-right: 0px;
+		background-color: #e8ebef;
+		margin-top: 0px;
+		margin-bottom: 0px;
+	}

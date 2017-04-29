@@ -1,0 +1,52 @@
+@CHARSET "ISO-8859-1";
+#searchResultsTable{
+	width: 100%; 
+	}
+	#searchResultsTable td{
+		width: 100%;
+		background-color: #E2CFCF;
+	}
+	#searchResultsTable tr{
+		width: 100%;
+		background-color: #E2CFCF;
+	}
+	#searchResultsTable div{
+		width: 80%;
+		margin-top: 10px;
+		margin-bottom: 5px;
+	}
+	#searchResultsTable h3{
+		float: left;
+		margin: 0px;
+		margin-left: 10px;
+		cursor: pointer;
+	}
+	#searchResultsTable h4{
+		float: left;
+		margin: 0px;
+		margin-top: 3px;
+		margin-left: 10px;
+		color: grey;
+	}
+	#searchResultsTable h5{
+		float: right;
+		margin: 0px;
+		margin-right: 10px;
+		cursor: pointer;
+	}
+	.searchBar{
+		margin-top: 5px;
+	}
+	.searchBar select{ 
+		float: left;
+		margin-left: 10px;
+		font-size: 20px;
+	}
+	.searchField{
+		margin-left: 25%;
+		margin-right: 5px;
+		margin-top:10px;
+		margin-bottom: 10px;
+		height: 20px;
+		width: 40%;
+	}

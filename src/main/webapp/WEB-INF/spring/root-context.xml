@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:security="http://www.springframework.org/schema/security"
+	xmlns:jdbc="http://www.springframework.org/schema/jdbc"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="http://www.springframework.org/schema/security http://www.springframework.org/schema/security/spring-security-4.0.xsd
+		http://www.springframework.org/schema/jdbc http://www.springframework.org/schema/jdbc/spring-jdbc-4.2.xsd
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.2.xsd
+		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.2.xsd">
+	
+	<!-- Root Context: defines shared resources visible to all other web components -->
+	
+	<!-- security -->
+	<security:http security="none" pattern="/resources/**"></security:http>
+	<security:http use-expressions="true">
+		<security:intercept-url pattern="/customLoginForm" access="permitAll"/>
+		<security:intercept-url pattern="/UserSignup" access="permitAll"/>
+		<security:intercept-url pattern="/addUser" access="permitAll"/>
+		<security:intercept-url pattern="/*" access="hasRole('ROLE_USER')"/>
+		<security:intercept-url pattern="/admin/*" access="hasRole('ROLE_ADMIN')"/>
+		<security:intercept-url pattern="/sub_Admin/*" access="hasRole('ROLE_SUB_ADMIN')"/>
+		<security:form-login login-page="/customLoginForm" authentication-failure-url="/customLoginForm?error" default-target-url="/userHome" password-parameter="j_password" username-parameter="j_username" login-processing-url="/performAuthenticatation" always-use-default-target="true" />
+		<security:logout logout-success-url="/customLoginForm?logout" delete-cookies="JSESSIONID" logout-url="/userLoggOut"/>
+	</security:http>
+	
+	<security:authentication-manager>
+    <security:authentication-provider user-service-ref="CustomUserDetailsService">
+      	<security:password-encoder hash="bcrypt"/>
+    </security:authentication-provider>
+  	</security:authentication-manager>
+  	
+  	<bean id="CustomUserDetailsService" class="com.neu.getyourcode.service.CustomUserDetailsService"/>
+  		
+  	<context:annotation-config/>
+  	
+   <context:component-scan base-package="com.neu.getyourcode.dao"/>
+  	 
+  	 <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource">
+		<property name="driverClassName" value="com.mysql.jdbc.Driver"/>
+		<property name="url" value="jdbc:mysql://localhost:3306/mydatabase"/>
+		<property name="username" value="root"/>
+		<property name="password" value="pass123"/>
+	</bean>	
+	
+	<bean id="sessionFactory" class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
+		<property name="dataSource" ref="dataSource"/>
+		<property name="packagesToScan" value="com.neu.getyourcode.domain"/>
+		<property name="hibernateProperties">
+			<props>
+				<prop key="hibernate.dialect">org.hibernate.dialect.MySQLDialect</prop> 
+   				<prop key="hibernate.show_sql">true</prop> 
+    			<prop key="hibernate.hbm2ddl.auto">update</prop> 
+    			<prop key="hibernate.show_sql">true</prop> 
+			</props>
+		</property>
+	</bean>
+		
+	<tx:annotation-driven transaction-manager="transactionManager"/>
+		
+	<bean id="transactionManager" class="org.springframework.orm.hibernate4.HibernateTransactionManager">
+		<property name="sessionFactory" ref="sessionFactory"/>
+	</bean>
+  	 
+</beans>

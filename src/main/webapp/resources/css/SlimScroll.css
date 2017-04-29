@@ -1,0 +1,12 @@
+@CHARSET "ISO-8859-1";
+	::-webkit-scrollbar {
+    	width: 5px;
+    	height: 5px;
+    	padding-left: 10px;
+	}
+	::-webkit-scrollbar-track-piece {
+    	background: white;
+	}
+	::-webkit-scrollbar-thumb {
+    	background: black;
+	}

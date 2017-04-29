@@ -1,0 +1,85 @@
+@CHARSET "ISO-8859-1";
+.only_table_holder{
+		width: 90%;
+		background-color: white;
+		height: 85vh;
+		float: right;
+		margin-right: 5%;
+		overflow:scroll;
+		overflow-x: hidden;
+	}
+	.only_table_holder table{
+		margin-top: 10px;
+		width: 100%;
+	}
+	.only_table_holder td{
+		margin-top: 5px;
+		width: 90%;
+	}
+	.title_h{
+		margin: 0px;
+		margin-left: 1%;
+		background-color: #e8ebef;
+		width: 98%;
+		padding-left: 5px;
+	}
+	.row_buttons{
+		margin: 0px;
+		margin-right: 1%;
+		width: 98%;
+	}
+	.row_buttons a{
+		text-align: left;
+		margin: 0px;
+	}
+	.content_h{
+		margin: 0px;
+		margin-top: 10px;
+		margin-bottom: 10px;
+		margin-left: 2%;
+		background-color: white;
+		width: 96%;
+	}
+	#create{
+		text-decoration: none;
+		text-align: right;
+		font-size: 25px;
+		color: black;
+		float: right;
+		margin-right: 10px;
+		color: blue;
+		cursor: pointer;
+		cursor: hand;
+	}
+	/*------------sub admin form-------------------------- */
+	#form_css_ref{
+	margin-top: 1vh;
+	margin-bottom: auto;
+}
+.sub_adm_table{
+	margin-left: auto;
+	margin-right: auto;
+	padding-bottom: 20px;
+}
+.sub_adm_table td{
+	padding-top: 7px;
+	padding-bottom: 7px;
+	width: 300px;
+}
+.input_block{
+	height: 25px;
+	width: 100%;
+	text-align: center;
+	border-radius: 5px;
+}
+.error{
+	color: red;
+	margin-left: 5px;
+	text-align: center;
+}
+#app_name{
+	font-family: 'Chewy', cursive;
+	text-align: center;
+	margin-top: 15vh;
+	margin-bottom: 0px;
+}

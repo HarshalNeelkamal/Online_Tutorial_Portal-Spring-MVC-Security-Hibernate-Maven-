@@ -1,0 +1,160 @@
+@CHARSET "ISO-8859-1";
+.mainBody{
+		width: 100%;
+		height: 90vh;
+		z-index: 0;
+	}
+.personalArea{
+		width: 31%;
+		background-color: e8ebef;
+		height: 100%;
+		float: left;
+		margin-left: 0%;
+		margin-right: 0%;
+		padding-left: 1%;
+		overflow: scroll;
+		overflow-x: hidden; 
+		margin-top: 2vh;
+	}
+	.searchArea{
+		width: 65%;
+		background-color: white;
+		height: 100%;
+		float: right;
+		margin-top: 2vh;
+		overflow:scroll;
+		overflow-x: hidden;
+	}
+	.personalArea table{
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.personalArea table td{
+		width: 100%;
+		background-color: #E2CFCF;
+		/*border-radius: 5px;*/
+	} 
+	.personalArea table tr{
+		width: 100%;
+		background-color: #A8A8A8;
+	} 
+	.personalArea table td p{
+		margin: 5%;
+	} 
+	.personalArea table th{
+		width: 100%;
+		font-weight: bold;
+	} 
+	.personalArea a{
+	    text-decoration: none;
+		color: black;
+		cursor: pointer;
+		cursor: hand;
+		margin: 15px;
+		padding: 5px;
+		padding-right: 10px;
+		padding-left: 10px;
+		border-radius: 5px;
+		background-color: #A8A8A8;
+	}
+	.personalArea h3{
+		text-align: center;
+		margin: 5px;
+	}
+	.personalArea td{
+		text-align: center;
+	}
+	.fillup_div{
+		position: absolute;
+		width: 40vw;
+		height: 30vw;
+		overflow-y: scroll;
+		overflow-x: none;
+		margin-top: 50px;
+		margin-bottom: auto;
+		margin-left: 30vw;
+		margin-right: 30vw;
+		background-color: black;
+	}
+	.fillup_div table{
+		width: 100%;
+	}
+	#floating_text{
+		margin-left: auto;
+		margin-right: auto;
+		border-radius: 10px;
+		width: 36vw;
+		height: 36vw;
+	}
+	.fillup_div td{
+		text-align: center;
+	}
+	.fillup_div input{
+		width: 20vw;
+	}
+	.fillup_div h2{
+		text-align: center;
+		margin: 5px;
+		color: white;
+	}
+	.backDrop{
+		display: none;
+		width: 100%;
+		height: 100%;
+		background-color: black;
+		opacity: 0.5;
+		position: absolute;
+		margin-top: -40px;
+	}
+	.close_button h2{
+		color: red;
+		text-align: right;
+		margin: 0px;
+		margin-right: 5px;
+		margin-top : 5px;
+		font-family: 'Source Sans Pro', sans-serif;
+		display: block;
+		float: right;
+		cursor: pointer; 
+		cursor: hand;
+	}
+	#searchResultsTable{
+		width: 100%;
+	}
+	.SearchDesignTd{
+		width: 100%;
+		padding-left: 5px;
+		padding-right: 5px;
+		cursor: pointer;
+		cursor: hand;
+		background-color: #F4F0F0;
+	}
+	.SearchDesignTd h2{
+		margin: 0px;
+		background-color: #DAD7D7;
+	}
+	.SearchDesignTd p{
+		margin-top: 0px;
+		margin-bottom: 0px;
+		color: grey;
+		height: 50px;
+    	white-space: pre-wrap;
+    	overflow: hidden;
+    	text-overflow: ellipsis;
+    	background-color: #F4F0F0;
+	}
+	.searchBar{
+		margin-top: 5px;
+		margin-bottom: 5px;
+	}
+	.searchBar select{ 
+		float: left;
+		margin-left: 10px;
+		font-size: 20px;
+	}
+	.searchField{
+		margin-left: 10px;
+		margin-right: 5px;
+		height: 20px;
+		width: 40%;
+	}

@@ -1,0 +1,53 @@
+@CHARSET "ISO-8859-1";
+.authsInfo{
+	width: 57%;
+	float: right;
+	background-color: white;
+	padding: 10px;
+	overflow: scroll;  
+	overflow-x: hidden;
+	margin: 0px;
+	margin-top: 10px;
+	margin-right: 1%;
+	height: 85vh;
+}
+.tutorialsTable{
+	width: 15%;
+	float: left;
+	background-color: white;
+	padding: 10px;
+	overflow: scroll;  
+	overflow-x: hidden;
+	margin: 0px;
+	margin-top: 10px;
+	margin-left: 1%;
+	height: 85vh;
+}
+.examplesTable{
+	width: 15%;
+	float: left;
+	background-color: white;
+	padding: 10px;
+	overflow: scroll;  
+	overflow-x: hidden;
+	margin: 0px;
+	margin-top: 10px;
+	margin-left: 1%;
+	height: 85vh;
+}
+.examplesTable table{
+	width: 100%;
+}
+.tutorialsTable table{
+	width: 100%;
+}
+.title_rows{
+	background-color: #e8ebef;
+	width: 100%;
+	cursor: pointer;
+	cursor: hand;
+}
+td{
+	text-align: center;
+	font-size: 20px;
+}

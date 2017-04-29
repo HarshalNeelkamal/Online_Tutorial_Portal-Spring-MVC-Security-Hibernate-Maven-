@@ -1,0 +1,70 @@
+@CHARSET "ISO-8859-1";
+	a{
+		color: white;
+    	padding: 5px 15px;
+    	text-decoration: none;
+	}
+	#form_css_ref{
+		margin-top: 2vh;
+		margin-bottom: auto;
+	}
+	.input_block{
+		height: 25px;
+		width: 100%;
+		text-align: center;
+		border-radius: 5px;
+	}
+	.error{
+		color: black;
+		background-color: red;
+		border-radius: 10px;
+		opacity: 0.5;
+		margin: 10px;
+		text-align: center;
+		height: 35px;
+		font-size: 20px;
+	}
+	.logout{
+		color: black;
+		background-color: green;
+		border-radius: 10px;
+		opacity: 0.5;
+		margin: 10px;
+		text-align: center;
+		height: 35px;
+		font-size: 20px;
+	}
+	#messageHolder{
+		height: 35px;
+		margin-top: 1vh;
+		width: 300px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+/*---------------------------login page css ends--------------------------------*/
+
+	table{
+		margin-left: auto;
+		margin-right: auto;
+		padding-bottom: 20px;
+	}
+	table td{
+		padding-top: 7px;
+		padding-bottom: 7px;
+		width: 300px;
+	}
+	.signuperror{
+		color: red;
+		margin-left: 5px;
+		text-align: center;
+	}
+	#app_name{
+		font-family: 'Chewy', cursive;
+		text-align: center;
+		margin-top: 15vh;
+		margin-bottom: 0px;
+	}
+	
+/*---------------------------signup page css ends--------------------------------*/
+	

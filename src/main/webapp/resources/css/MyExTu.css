@@ -1,0 +1,154 @@
+@CHARSET "ISO-8859-1";
+
+#example_table_holder{
+		width: 90%;
+		background-color: white;
+		height: 85vh;
+		float: right;
+		margin-top: 5vh;
+		margin-right: 5%;
+		overflow:scroll;
+		overflow-x: hidden;
+	}
+	#example_table_holder table{
+		margin-top: 10px;
+		width: 100%;
+	}
+	#example_table_holder td{
+		margin-top: 5px;
+		width: 90%;
+	}
+	.title_h{
+		margin: 0px;
+		margin-left: 1%;
+		background-color: #e8ebef;
+		width: 98%;
+		padding-left: 5px;
+	}
+	.content_h{
+		margin: 0px;
+		margin-top: 10px;
+		margin-bottom: 10px;
+		margin-left: 2%;
+		background-color: white;
+		width: 96%;
+		overflow-x: scroll;
+		overflow-y: hidden;
+		word-break: break-word;
+    	white-space: pre-wrap;
+	}
+	.floating_button{
+		width: 30px;
+		height: 30px;
+		border-radius: 50%;
+		position: absolute;
+		margin-bottom: 10px;
+		margin-left: 10px;
+		margin-top: 5vh;
+		-webkit-box-shadow: none;
+        box-shadow: none;
+		outline: 0;
+	}
+	.floating_button h1{ 
+		margin: 0px;
+	}
+
+/*------------------------------------------------my example ends------------------------------------------- */
+
+#topic_table_holder{
+		width: 78%;
+		background-color: white;
+		height: 85vh;
+		float: right;
+		margin-top: 5vh;
+		margin-right: 2%;
+		overflow:scroll;
+		overflow-x: hidden;
+	}
+	#topic_table_holder table{
+		margin-top: 10px;
+		width: 100%;
+	}
+	#topic_table_holder td{
+		margin-top: 5px;
+		width: 80%;
+	}
+	#topic_table_holder a{
+		color: black;
+		text-decoration: none;
+		float: right;
+		text-align: right;
+		width: 50%;
+	}
+	.unremovable{
+		font-size: 30px;
+	}
+	.floating_button_tut{
+		width: 30px;
+		height: 30px;
+		border-radius: 50%;
+		margin-left: 10px;
+		margin-top: 10px;
+	} 
+	.floating_button_tut h1{ 
+		margin: 0px;
+	}
+	#add_td{
+		background-color: transparent;
+		text-align: right;
+	}
+	.topic_area{
+		width: 18%;
+		background-color: e8ebef;
+		height: 85vh;
+		float: left;
+		margin-left: 1%;
+		margin-right: 1%;
+		margin-top: 5vh;
+		overflow: scroll;
+		overflow-x: hidden; 
+	}
+	.topic_area table{
+		width: 96%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.topic_area table td{
+		width: 90%;
+		background-color: white;
+		text-align: center;
+		height: 5vh;
+		font-size: 130%;
+	} 
+	.topic_area table th{
+		width: 90%;
+		font-weight: bold;
+		height: 5vh;
+	} 
+	#last_row_in_topic_table{
+		background-color: #a5b1c0;
+	}
+	a{
+		cursor: pointer;
+		cursor: hand;
+		text-decoration: none;
+		color: black;
+	}
+	
+/*---------------edit form------------ */
+#edit_table{
+	width: 100%;	
+}
+#edit_table td{
+	width: 100%;
+	text-align: center;
+}
+#content{
+	width: 50vw;
+	height: 70vh;
+}
+/*-----------forms-------------- */
+#descriptionInput{
+	width: 50vw;
+	height: 300px;
+}
